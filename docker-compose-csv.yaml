@@ -1,0 +1,9 @@
+version: '3'
+services:
+  catalog:
+    image: catalog
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./csv.properties:/cfg/config.property
